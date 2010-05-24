@@ -19,6 +19,12 @@ A friendly ecosystem of web tools for personal publishing.
 
 ... ... ... ... ... ... ... ... ... ... ... ... ... ... ...
 
+Reference implementation of ERB templates:
+
+http://ruby-doc.org/core/classes/ERB.html
+
+... ... ... ... ... ... ... ... ... ... ... ... ... ... ...
+
 See: http://github/maetl/tppm
 
 ... ... ... ... ... ... ... ... ... ... ... ... ... ... ...
