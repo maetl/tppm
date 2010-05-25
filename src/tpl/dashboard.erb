@@ -1,0 +1,106 @@
+<div class="workspace-header">
+	<h1>Dashboard</h1>
+</div>
+
+
+<div class="workspace">
+	
+	<div class="col-a">
+		<h2>Tuesday 25th May, 2010</h2>
+	</div>
+	
+	<div class="clear"></div>
+	
+	<div class="col-b">
+		<h3>Welcome back, Admin</h3>
+	</div>
+	
+	<div class="col-b">
+		<h3>Upcoming Features</h3>
+		<p><strong>Wednesday 13th October</strong>, Interview with Jeff VanderMeer by Grant Stone</p>
+	</div>
+
+	<div class="clear"></div>
+	
+</div>
+<div class="workspace">
+
+	<div class="col-a">
+		<h2>Edit Featured Listings</h2>
+	</div>
+	
+	<div class="clear"></div>
+	
+	<div class="col-b">
+		
+		<h3>Homepage</h3>
+		<p>Selected content displaying on the homepage</p>
+		
+		<ul class="sortable-list" id="homepage-items">
+						<li id="story-18"><a href="#remove" class="remove">x</a> <a href="/admin/stories/edit/the-comfort-of-cabbages">The Comfort of Cabbages (Ripley Patton )</a></li>
+						<li id="story-16"><a href="#remove" class="remove">x</a> <a href="/admin/stories/edit/the-sky-scribbler">The Sky Scribbler (Abmi Handayani)</a></li>
+						<li id="story-17"><a href="#remove" class="remove">x</a> <a href="/admin/stories/edit/chimes-to-flutes">Chimes to Flutes  (Samuel Brase)</a></li>
+						<li id="story-9"><a href="#remove" class="remove">x</a> <a href="/admin/stories/edit/getting-and-giving">Getting and Giving (Deborah Sheldon)</a></li>
+						<li id="story-15"><a href="#remove" class="remove">x</a> <a href="/admin/stories/edit/sparrows">Sparrows (Dalih Sembiring)</a></li>
+						<li id="story-14"><a href="#remove" class="remove">x</a> <a href="/admin/stories/edit/survivor">Survivor (Michael Botur)</a></li>
+					</ul>
+		
+		<div class="item-finder" id="homepage-finder">
+			
+			Add another: <input type="text" name="homepageItems">
+			
+		</div>
+		
+		<div class="action">
+			<br>
+			<form method="post" action="/admin/listings/homepage">
+				<input id="save-homepage-listings" type="submit" value="Save Current Order">
+			</form>
+		</div>
+		
+	</div>
+	
+	<div class="col-b">
+		
+		<h3>Stories Index</h3>
+		<p>Selected stories shown on the stories index</p>
+
+		<ul class="sortable-list" id="stories-items">
+						<li id="story-15"><a href="#remove" class="remove">x</a> <a href="/admin/stories/edit/sparrows">Sparrows (Dalih Sembiring)</a></li>
+						<li id="story-18"><a href="#remove" class="remove">x</a> <a href="/admin/stories/edit/the-comfort-of-cabbages">The Comfort of Cabbages (Ripley Patton )</a></li>
+						<li id="story-16"><a href="#remove" class="remove">x</a> <a href="/admin/stories/edit/the-sky-scribbler">The Sky Scribbler (Abmi Handayani)</a></li>
+						<li id="story-17"><a href="#remove" class="remove">x</a> <a href="/admin/stories/edit/chimes-to-flutes">Chimes to Flutes  (Samuel Brase)</a></li>
+						<li id="story-14"><a href="#remove" class="remove">x</a> <a href="/admin/stories/edit/survivor">Survivor (Michael Botur)</a></li>
+						<li id="story-11"><a href="#remove" class="remove">x</a> <a href="/admin/stories/edit/the-pool-ornament">The Pool Ornament (A. T. Zanker)</a></li>
+						<li id="story-8"><a href="#remove" class="remove">x</a> <a href="/admin/stories/edit/the-birthday-present">The Birthday Present (Deborah Sheldon)</a></li>
+						<li id="story-10"><a href="#remove" class="remove">x</a> <a href="/admin/stories/edit/embrace">Embrace (Monique Hayes)</a></li>
+						<li id="story-12"><a href="#remove" class="remove">x</a> <a href="/admin/stories/edit/woodfiber-dreams">Woodfiber Dreams (James Stark)</a></li>
+						<li id="story-3"><a href="#remove" class="remove">x</a> <a href="/admin/stories/edit/viennese-meow">Viennese Meow (Glynne MacLean)</a></li>
+						<li id="story-1"><a href="#remove" class="remove">x</a> <a href="/admin/stories/edit/when-her-wings">When Her Wings (Grant Stone)</a></li>
+						<li id="story-2"><a href="#remove" class="remove">x</a> <a href="/admin/stories/edit/a-cautionary-tale">A Cautionary Tale (A. T. Zanker)</a></li>
+						<li id="story-7"><a href="#remove" class="remove">x</a> <a href="/admin/stories/edit/latter-day-lepers">Latter Day Lepers (Michael Botur)</a></li>
+						<li id="story-9"><a href="#remove" class="remove">x</a> <a href="/admin/stories/edit/getting-and-giving">Getting and Giving (Deborah Sheldon)</a></li>
+						<li id="story-4"><a href="#remove" class="remove">x</a> <a href="/admin/stories/edit/las-senoras-de-sinaloa">Las Señoras de Sinaloa (Michael McLaughlin)</a></li>
+						<li id="story-13"><a href="#remove" class="remove">x</a> <a href="/admin/stories/edit/its-a-surprise">It’s a Surprise (KJ Hannah Greenberg)</a></li>
+						<li id="story-6"><a href="#remove" class="remove">x</a> <a href="/admin/stories/edit/derek">Derek (Aaron Swartz)</a></li>
+						<li id="story-5"><a href="#remove" class="remove">x</a> <a href="/admin/stories/edit/what-difference-does-it-make">What Difference Does it Make? (Ross Brighton)</a></li>
+					</ul>
+		
+		<div class="item-finder" id="stories-finder">
+			
+			Add another: <input type="text" name="featuredStories">
+			
+		</div>
+		
+		<div class="action">
+			<br>
+			<form method="post" action="/admin/listings/stories">
+				<input id="save-stories-listings" type="submit" value="Save Current Order">
+			</form>
+		</div>
+		
+	</div>
+	
+	<div class="clear"></div>
+	
+</div>

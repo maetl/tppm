@@ -24,9 +24,15 @@ get "/" do
 end
 
 get "/preview/dashboard" do
+  # incomplete
   erb :dashboard
 end
 
 get "/preview/pictures" do
+  # incomplete
   erb :pictures
+end
+
+get "/preview/elements" do
+  erb :elements
 end
