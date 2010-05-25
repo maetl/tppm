@@ -5,3 +5,70 @@ tppm > ..> ... .>. ... .> ...>..> .
 @asset css:swatch:prima-varia
 >.. ... >.. ... ... >.. ... .. .>.
 */
+body {
+	font-family:Arial;
+	background-color:#9e9772;
+	background-color:#efefef;
+	color:#3e4243;
+}
+
+.layout-header {
+	width:100%;
+	background-color:#0A61AF;
+	border-bottom:6px solid #3785ce;
+	float:left;
+}
+
+.layout-header h1 {
+	float:left;
+	font-size:36px;
+	font-weight: normal;
+	font-family:Rockwell,"Mido","Century Schoolbook",Georgia,serif;
+	color:#AFD9FF;
+	margin:6px 0 0 48px;
+	text-shadow:#010145 1px 1px 0;
+}
+
+.layout-header .nav {
+	font-family:Rockwell, "Mido","Century Schoolbook",Georgia,serif;
+	margin:0 0 0 220px;
+	list-style-type:none;
+	width:640px;
+	float:left;
+}
+
+.layout-header li {
+	float:left;
+}
+
+.layout-header li a {
+	display:block;
+	background-color:#0A61AF;
+	color:#AFD9FF;
+	padding:18px 18px 12px 18px;
+	text-decoration:none;
+	font-size:18px;
+	text-shadow:#010145 1px 1px 0;
+}
+
+.layout-header li a:hover {
+	background-color:#3785ce;
+	color:#AFD9FF;
+	text-shadow:#010145 1px 1px 0;
+	
+}
+
+.workspace-header {
+	width:100%;
+	float:left;
+	background-color:#b5d5ff;
+	border-bottom:2px solid #a4c4ee;
+}
+
+.workspace-header h1 {
+	font-family:Georgia;
+	font-weight:normal;
+	font-size:44px;
+	letter-spacing:-1px;
+	margin:6px 48px;
+}

@@ -4,6 +4,9 @@ tppm > ..> ... .>. ... .> ...>..> .
 @asset css:swatch:magnetto
 >.. ... >.. ... ... >.. ... .. .>.
 */
+a {
+    color:#791718;
+}
 body {
 color:#423E3E;
 background-color:#FFBFBF;
@@ -22,7 +25,7 @@ font-family:"Mido","Century Schoolbook",Georgia,serif;
 font-size:36px;
 font-weight:normal; 
 color:#FE3942;
-margin:6px 0 0 12px;
+margin:6px 0 0 52px;
 text-shadow:#6c1415 1px 1px 0;
 }
 
@@ -52,4 +55,20 @@ text-shadow:#6c1415 1px 1px 0;
 background-color:#FE3942;
 color:#791718;
 text-shadow:#eb333b 1px 1px 0;
+}
+
+.workspace-header {
+width:100%;
+float:left;
+background-color:#ee888b;
+border-bottom:2px solid #bb7575;
+}
+
+.workspace-header h1 {
+color:#633139;
+font-family:"Mido","Century Schoolbook",Georgia,serif;
+font-weight:normal;
+font-size:44px;
+letter-spacing:-1px;
+margin:9px 48px;
 }

@@ -14,6 +14,9 @@ tppm > ..> ... .>. ... .> ...>..> .
   margin: 0;
   padding: 0; }
 
+.clear {
+  clear: both; }
+
 /**
 tppm > ..> ... .>. ... .> ...>..> .
 
@@ -21,17 +24,52 @@ tppm > ..> ... .>. ... .> ...>..> .
 >.. ... >.. ... ... >.. ... .. .>.
 */
 /**
+ * Grid cells
+ */
+.workspace .col-a {
+  float: left;
+  width: 70%;
+  padding-bottom: 2px;
+  margin-bottom: 20px; }
+
+.workspace .col-b {
+  float: left;
+  width: 40%;
+  margin-right: 3%; }
+
+.workspace .col-c {
+  float: left;
+  width: 20%;
+  margin-left: 3%; }
+
+.workspace .col-d {
+  float: left;
+  width: 60%; }
+
+.workspace .col-a .col-a,
+.workspace .col-a .col-c {
+  margin-bottom: 0; }
+
+/**
+ * Tab panels
+ */
+.tab-panel {
+  width: 100%;
+  display: none; }
+
+.tab-panel#tab-a {
+  display: block; }
+
+.element-panel {
+  border-bottom: 6px solid #e7c6c4;
+  background-color: #f5e6e6; }
+
+/**
 tppm > ..> ... .>. ... .> ...>..> .
 
 @asset css:header
 >.. ... >.. ... ... >.. ... .. .>.
 */
-.clear {
-  clear: both; }
-
-a {
-  color: #791718; }
-
 .element-panel {
   height: 520px;
   margin-bottom: 70px;
@@ -66,7 +104,7 @@ a {
 
 .workspace {
   font-family: Georgia,serif;
-  margin: 24px 48px; }
+  margin: 28px 48px 0 48px; }
 
 .toolbar {
   width: 100%;
@@ -126,41 +164,6 @@ a {
   padding: 6px;
   color: #000; }
 
-.workspace .col-a {
-  float: left;
-  width: 70%;
-  padding-bottom: 2px;
-  margin-bottom: 20px; }
-
-.workspace .col-b {
-  float: left;
-  width: 40%;
-  margin-right: 3%; }
-
-.workspace .col-c {
-  float: left;
-  width: 20%;
-  margin-left: 3%; }
-
-.workspace .col-d {
-  float: left;
-  width: 60%; }
-
-.workspace .col-a .col-a,
-.workspace .col-a .col-c {
-  margin-bottom: 0; }
-
-.tab-panel {
-  width: 100%;
-  display: none; }
-
-.tab-panel#tab-a {
-  display: block; }
-
-.element-panel {
-  border-bottom: 6px solid #e7c6c4;
-  background-color: #f5e6e6; }
-
 .col-b table {
   width: 100%;
   border-spacing: 0; }
@@ -178,6 +181,21 @@ table td {
 /** OLD CRAP IS ABOVE **/
 /** WATCH OUT FOR RAPTORS **/
 /** NEW STYLES HERE FREESTYLE */
+/**
+tppm > ..> ... .>. ... .> ...>..> .
+
+@asset css:footer
+>.. ... >.. ... ... >.. ... .. .>.
+*/
+/**
+tppm > ..> ... .>. ... .> ...>..> .
+
+@asset css:forms
+>.. ... >.. ... ... >.. ... .. .>.
+*/
+.element {
+  overflow: hidden; }
+
 .element h3 {
   font-family: Georgia,serif;
   font-size: 18px;
@@ -264,24 +282,12 @@ table td {
 /**
 tppm > ..> ... .>. ... .> ...>..> .
 
-@asset css:footer
->.. ... >.. ... ... >.. ... .. .>.
-*/
-/**
-tppm > ..> ... .>. ... .> ...>..> .
-
-@asset css:forms
->.. ... >.. ... ... >.. ... .. .>.
-*/
-.element {
-  border: 2px solid yellow; }
-
-/**
-tppm > ..> ... .>. ... .> ...>..> .
-
 @asset css:swatch:magnetto
 >.. ... >.. ... ... >.. ... .. .>.
 */
+a {
+  color: #791718; }
+
 body {
   color: #423E3E;
   background-color: #FFBFBF; }
@@ -298,7 +304,7 @@ body {
   font-size: 36px;
   font-weight: normal;
   color: #FE3942;
-  margin: 6px 0 0 12px;
+  margin: 6px 0 0 52px;
   text-shadow: #6c1415 1px 1px 0; }
 
 .header .nav {
@@ -324,3 +330,17 @@ body {
   background-color: #FE3942;
   color: #791718;
   text-shadow: #eb333b 1px 1px 0; }
+
+.workspace-header {
+  width: 100%;
+  float: left;
+  background-color: #ee888b;
+  border-bottom: 2px solid #bb7575; }
+
+.workspace-header h1 {
+  color: #633139;
+  font-family: "Mido","Century Schoolbook",Georgia,serif;
+  font-weight: normal;
+  font-size: 44px;
+  letter-spacing: -1px;
+  margin: 9px 48px; }

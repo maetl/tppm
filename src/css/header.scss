@@ -5,14 +5,6 @@ tppm > ..> ... .>. ... .> ...>..> .
 >.. ... >.. ... ... >.. ... .. .>.
 */
 
-.clear {
-	clear:both;
-}
-
-a {
-    color:#791718;
-}
-
 .element-panel {
     height:520px;
     margin-bottom:70px;
@@ -54,7 +46,7 @@ a {
 
 .workspace {
 	font-family:Georgia,serif;;	    
-	margin:24px 48px;
+	margin:28px 48px 0 48px;
 }
 
 .toolbar {
@@ -137,49 +129,6 @@ table td a:hover {
 
 }
 
-.workspace .col-a {
-	float:left;
-	width:70%;
-	padding-bottom:2px;
-	margin-bottom:20px;
-}
-
-.workspace .col-b {
-	float:left;
-	width:40%;
-	margin-right:3%;
-}
-
-.workspace .col-c {
-	float:left;
-	width:20%;
-	margin-left:3%;
-}
-
-.workspace .col-d {
-	float:left;	
-	width:60%;
-}
-
-.workspace .col-a .col-a,
-.workspace .col-a .col-c {
-    margin-bottom:0;
-}
-
-.tab-panel {
-    width:100%;
-    display:none;
-}
-
-.tab-panel#tab-a {
-    display:block;
-}
-
-.element-panel {
-    border-bottom:6px solid #e7c6c4;
-    background-color:#f5e6e6;
-}
-
 .col-b table {
     width:100%;
     border-spacing:0;
@@ -203,107 +152,3 @@ table td {
 /** WATCH OUT FOR RAPTORS **/
 
 /** NEW STYLES HERE FREESTYLE */
-
-.element h3 {
-    font-family:Georgia,serif;
-	font-size:18px;
-	font-weight:normal;
-}
-
-.element p {
-    font-family:Georgia,serif;
-	font-size:13px;
-	margin:6px 12px 6px 0;
-	line-height:18px;
-}
-
-.element label {
-    font-family:Georgia,serif;
-	display:block;
-	font-size:18px;
-	margin:6px 3px;
-}
-
-.element input, .element textarea {
-	font-size:21px;
-	font-family:Georgia,serif;
-	width:100%;
-	padding:6px;
-}
-
-.element-help {
-    display:block;
-    margin:6px 3px;
-    font-size:13px;
-}
-
-.element.element-text textarea {
-	height:60px;
-}
-
-/*.element-file input[type=file], .element-files input[type=file] {
-	position: relative;
-	text-align: right;
-	opacity:0;
-	-moz-opacity:0;
-	filter:alpha(opacity:0);
-	opacity:0;
-	z-index:2;
-	width:67%;
-}*/
-
-/** Refactor this into Jquery for more accurate target hit area */
-.element-file input[type=file]:hover, .element-files input[type=file]:hover {
-    cursor:pointer;
-}
-
-.element-file-ext:hover {
-    
-}
-
-.element-file-ext input  {
-    width:60%;
-}
-
-.element-file-input {
-    position:relative;
-}
-
-.element-file-ext {
-    position:absolute;
-    top:0px;
-    left:0px;
-    z-index:1;
-}
-
-.element-file-ext span {
-    margin-left:12px;
-    font-size:18px;
-}
-
-.element-files-expand {
-    margin:12px 6px;
-}
-
-.element-editor textarea {
-    display:block;
-    height:500px;
-}
-
-/**
- * Button styles
- */
-.element-bit-button {
-    background-color:#FE3942;      
-    color:#efefef;
-    padding:6px;
-}
-
-.element-bit-button:hover {
-    cursor:pointer;
-}
-
-.element-bit-button.small {
-    font-size:13px;
-    padding:4px;
-}

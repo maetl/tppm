@@ -4,3 +4,52 @@ tppm > ..> ... .>. ... .> ...>..> .
 @asset css:layout
 >.. ... >.. ... ... >.. ... .. .>.
 */
+
+/**
+ * Grid cells
+ */
+.workspace .col-a {
+	float:left;
+	width:70%;
+	padding-bottom:2px;
+	margin-bottom:20px;
+}
+
+.workspace .col-b {
+	float:left;
+	width:40%;
+	margin-right:3%;
+}
+
+.workspace .col-c {
+	float:left;
+	width:20%;
+	margin-left:3%;
+}
+
+.workspace .col-d {
+	float:left;	
+	width:60%;
+}
+
+.workspace .col-a .col-a,
+.workspace .col-a .col-c {
+    margin-bottom:0;
+}
+
+/**
+ * Tab panels
+ */
+ .tab-panel {
+     width:100%;
+     display:none;
+ }
+
+ .tab-panel#tab-a {
+     display:block;
+ }
+
+ .element-panel {
+     border-bottom:6px solid #e7c6c4;
+     background-color:#f5e6e6;
+ }
