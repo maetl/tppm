@@ -2,21 +2,32 @@
 #
 # @asset rakefile
 # >.. ... >.. ... ... >.. ... .. .>.
-
+require 'cssmin'
+require 'jsmin'
 
 desc "base stylesheet generator"
-task :build do
+task :build_css do
   sh "sass src/css/base.scss src/tppm.css"
 end
 
-desc "formats code for frontend use"
-task :compile => :build do
-  #sh "sass -t compressed src/tppm.css ui/css/tppm.css"
-  # sass is being bitchy with the compressor so just
-  # run a straight copy until a better CSS compression
-  # lib can be decided
-  sh "cp src/tppm.css ui/css/tppm.css"
+desc "compress stylesheets code"
+task :compress_css => :build_css do
+  input = 'src/tppm.css'
+  output = 'ui/css/tppm.css'
+  File.open(input, 'r') do |i|
+    File.open(output, 'w') {|o| o << CSSMin.minify(i) }
+  end
 end
 
+desc "compress javascript code"
+task :compress_js do
+  input = 'src/tppm.js'
+  output = 'ui/js/tppm.js'
+  File.open(input, 'r') do |i|
+    File.open(output, 'w') {|o| o << JSMin.minify(i) }
+  end
+end
 
-task :default => :compile
+desc "Compress all UI assets"
+task :compress => [:compress_js, :compress_css]
+task :default => :compress
