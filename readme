@@ -14,4 +14,17 @@ MM88MMM  8b,dPPYba,   8b,dPPYba,   88,dPYba,,adPYba,
 For want of a name, the brand was lost, for want of a brand, the logo was lost, for want of the logo,
 the hype was lost, for want of the hype, the project was lost.
 
-see: http://github.com/maetl/tppm
+See: http://github.com/maetl/tppm
+
+== Install
+
+Ruby and Rubygems, and the following gem dependencies are required:
+
+ $> sudo gem install sinatra
+ $> sudo gem install jsmin
+ $> sudo gem install cssmin
+ $> sudo gem install faker
+
+To run the preview app:
+
+ $> ruby preview.rb
