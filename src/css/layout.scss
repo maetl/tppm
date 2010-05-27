@@ -1,13 +1,35 @@
 /**
-tppm > ..> ... .>. ... .> ...>..> .
-
-@asset css:layout
->.. ... >.. ... ... >.. ... .. .>.
+Main layout and grid system
 */
 
 /**
- * Grid cells
+ * Header and navigation bars
  */
+ 
+.header {
+    width:100%;
+    float:left;
+    
+    .nav {
+        margin:0 0 0 220px;
+        list-style-type:none;
+        width:640px;        
+    }
+    
+    li {
+        float:left;
+    }
+}
+
+.workspace-header {
+    width:100%;
+    float:left;
+}
+
+/**
+ * Workspace column boxes
+ */
+
 .workspace .col-a {
 	float:left;
 	width:70%;

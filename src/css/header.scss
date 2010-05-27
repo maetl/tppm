@@ -1,9 +1,66 @@
 /**
-tppm > ..> ... .>. ... .> ...>..> .
-
-@asset css:header
->.. ... >.. ... ... >.. ... .. .>.
+The main header and navigation list
 */
+
+a {
+    color: $link-color;
+}
+
+body {
+    color: $text-color;
+    background-color: $body-color;
+}
+
+.header {
+    background-color:$link-color;
+    border-bottom:6px solid #FE3942;
+}
+
+.header h1, .header p {
+    float:left;
+    font-family: $leader-font;
+    font-size:$leader-font-title-size;
+    font-weight:$leader-font-weight;
+    color:$leader-font-color;
+    margin:6px 0 0 52px;
+    text-shadow:$leader-font-shadow;
+}
+
+.header li a {
+    font-family:$leader-font;
+    display:block;
+    background-color:$link-color;
+    color:#FE3942;
+    padding:18px 18px 12px 18px;
+    text-decoration:none;
+    font-size:$leader-font-nav-size;
+    text-shadow:$leader-font-shadow;
+    text-transform: $leader-font-transform;
+}
+
+.header li a:hover {
+background-color: $hi-color;
+color:#791718;
+text-shadow:#eb333b 1px 1px 0;
+}
+
+.workspace-header {
+    background-color: $workspace-header-bg-color;
+    border-bottom:2px solid $workspace-header-border-color;
+}
+
+.workspace-header h1 {
+color:#633139;
+font-family: $leader-font;
+font-weight: $leader-font-h-weight;
+font-size: $leader-font-h-size;
+text-transform: $leader-font-transform;
+letter-spacing:-1px;
+margin:9px 48px;
+}
+
+/** old hacky styles follow */
+/** BEWARE */
 
 .element-panel {
     height:520px;

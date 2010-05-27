@@ -47,26 +47,6 @@ tppm > ..> ... .>. ... .> ...>..> .
 	height:60px;
 }
 
-/*.element-file input[type=file], .element-files input[type=file] {
-	position: relative;
-	text-align: right;
-	opacity:0;
-	-moz-opacity:0;
-	filter:alpha(opacity:0);
-	opacity:0;
-	z-index:2;
-	width:67%;
-}*/
-
-/** Refactor this into Jquery for more accurate target hit area */
-.element-file input[type=file]:hover, .element-files input[type=file]:hover {
-    cursor:pointer;
-}
-
-.element-file-ext:hover {
-    
-}
-
 .element-file-ext input  {
     width:60%;
 }
