@@ -1,0 +1,31 @@
+.element {
+    overflow:hidden;
+}
+
+.element h3 {
+    font-family:Georgia,serif;
+	font-size:18px;
+	font-weight:normal;
+	margin:6px 3px;
+}
+
+.element p {
+    font-family:Georgia,serif;
+	font-size:13px;
+	margin:6px 12px 6px 0;
+	line-height:18px;
+}
+
+.element label {
+    font-family:Georgia,serif;
+	display:block;
+	font-size:18px;
+	margin:6px 3px;
+}
+
+.element input, .element textarea {
+	font-size:21px;
+	font-family:Georgia,serif;
+	width:100%;
+	padding:6px;
+}

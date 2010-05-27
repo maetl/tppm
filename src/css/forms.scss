@@ -1,97 +1,11 @@
-/**
-tppm > ..> ... .>. ... .> ...>..> .
 
-@asset css:forms
->.. ... >.. ... ... >.. ... .. .>.
-*/
-
+@import "forms/element-base";
+@import "forms/element-help";
+@import "forms/element-text";
+@import "forms/element-select";
 @import "forms/element-datetime";
-
-.element {
-    overflow:hidden;
-}
-
-
-.element h3 {
-    font-family:Georgia,serif;
-	font-size:18px;
-	font-weight:normal;
-}
-
-.element p {
-    font-family:Georgia,serif;
-	font-size:13px;
-	margin:6px 12px 6px 0;
-	line-height:18px;
-}
-
-.element label {
-    font-family:Georgia,serif;
-	display:block;
-	font-size:18px;
-	margin:6px 3px;
-}
-
-.element input, .element textarea {
-	font-size:21px;
-	font-family:Georgia,serif;
-	width:100%;
-	padding:6px;
-}
-
-.element-help {
-    display:block;
-    margin:6px 3px;
-    font-size:13px;
-}
-
-.element.element-text textarea {
-	height:60px;
-}
-
-.element-file-ext input  {
-    width:60%;
-}
-
-.element-file-input {
-    position:relative;
-}
-
-.element-file-ext {
-    position:absolute;
-    top:0px;
-    left:0px;
-    z-index:1;
-}
-
-.element-file-ext span {
-    margin-left:12px;
-    font-size:18px;
-}
-
-.element-files-expand {
-    margin:12px 6px;
-}
-
-.element-editor textarea {
-    display:block;
-    height:500px;
-}
-
-/**
- * Button styles
- */
-.element-bit-button {
-    background-color:#FE3942;      
-    color:#efefef;
-    padding:6px;
-}
-
-.element-bit-button:hover {
-    cursor:pointer;
-}
-
-.element-bit-button.small {
-    font-size:13px;
-    padding:4px;
-}
+@import "forms/element-editor";
+@import "forms/element-file";
+@import "forms/element-action";
+@import "forms/element-button";
+@import "forms/element-bit-buttom";

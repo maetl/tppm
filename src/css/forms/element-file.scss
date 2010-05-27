@@ -1,0 +1,23 @@
+.element-file-ext input  {
+    width:60%;
+}
+
+.element-file-input {
+    position:relative;
+}
+
+.element-file-ext {
+    position:absolute;
+    top:0px;
+    left:0px;
+    z-index:1;
+}
+
+.element-file-ext span {
+    margin-left:12px;
+    font-size:18px;
+}
+
+.element-files-expand {
+    margin:12px 6px;
+}
