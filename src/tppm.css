@@ -1,18 +1,46 @@
-/**
-tppm > ..> ... .>. ... .> ...>..> .
-
-@asset css:base
->.. ... >.. ... ... >.. ... .. .>.
-*/
-/**
-tppm > ..> ... .>. ... .> ...>..> .
-
-@asset css:reset
->.. ... >.. ... ... >.. ... .. .>.
-*/
-* {
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline; }
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: separate;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: ""; }
+
+blockquote, q {
+  quotes: "" ""; }
 
 .clear {
   clear: both; }
@@ -21,8 +49,8 @@ tppm > ..> ... .>. ... .> ...>..> .
 Main layout and grid system
 */
 /**
- * Header and navigation bars
- */
+Header and navigation bars
+*/
 .header {
   width: 100%;
   float: left; }
@@ -38,13 +66,16 @@ Main layout and grid system
   float: left; }
 
 /**
- * Workspace column boxes
- */
+Workspace column boxes
+*/
+.workspace {
+  width: 100%;
+  float: left;
+  margin-top: 20px; }
+
 .workspace .col-a {
   float: left;
-  width: 70%;
-  padding-bottom: 2px;
-  margin-bottom: 20px; }
+  width: 70%; }
 
 .workspace .col-b {
   float: left;
@@ -59,10 +90,6 @@ Main layout and grid system
 .workspace .col-d {
   float: left;
   width: 60%; }
-
-.workspace .col-a .col-a,
-.workspace .col-a .col-c {
-  margin-bottom: 0; }
 
 /**
  * Tab panels
@@ -79,11 +106,8 @@ Main layout and grid system
   background-color: #f5e6e6; }
 
 /**
-Neu Grotesk - International style für alles
+Magnetto - default brite minimalist
 */
-.workspace-header h1 {
-  letter-spacing: -3px; }
-
 /**
 The main header and navigation list
 */
@@ -100,15 +124,15 @@ body {
 
 .header h1, .header p {
   float: left;
-  font-family: "Akzidenz Grotesk Medium", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-family: "Mido", "Century Schoolbook", Georgia, serif;
   font-size: 36px;
-  font-weight: bold;
+  font-weight: normal;
   color: #fe3942;
   margin: 6px 0 0 52px;
   text-shadow: #6c1415 1px 1px 0; }
 
 .header li a {
-  font-family: "Akzidenz Grotesk Medium", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-family: "Mido", "Century Schoolbook", Georgia, serif;
   display: block;
   background-color: #791718;
   color: #FE3942;
@@ -116,7 +140,7 @@ body {
   text-decoration: none;
   font-size: 18px;
   text-shadow: #6c1415 1px 1px 0;
-  text-transform: lowercase; }
+  text-transform: none; }
 
 .header li a:hover {
   background-color: #fe3942;
@@ -129,10 +153,10 @@ body {
 
 .workspace-header h1 {
   color: #633139;
-  font-family: "Akzidenz Grotesk Medium", "Helvetica Neue", "Helvetica", Arial, sans-serif;
-  font-weight: bold;
-  font-size: 56px;
-  text-transform: lowercase;
+  font-family: "Mido", "Century Schoolbook", Georgia, serif;
+  font-weight: normal;
+  font-size: 44px;
+  text-transform: none;
   letter-spacing: -1px;
   margin: 9px 48px; }
 
@@ -161,14 +185,6 @@ body {
 
 .element-action {
   background-color: #ce9795; }
-
-.workspace h1 {
-  padding-top: 8px;
-  font-size: 26px;
-  font-family: "Mido","Century Schoolbook",Georgia,serif;
-  font-weight: normal;
-  height: 24px;
-  color: #FE3942; }
 
 .workspace {
   font-family: Georgia,serif;
@@ -219,19 +235,6 @@ body {
   font-size: 21px;
   font-family: Georgia,serif; }
 
-.element-select select {
-  font-size: 18px;
-  padding: 6px;
-  width: 32%; }
-
-.element.content textarea {
-  font-size: 14px;
-  font-family: "Lucida Console",Courier,Georgia,serif;
-  width: 100%;
-  height: 400px;
-  padding: 6px;
-  color: #000; }
-
 .col-b table {
   width: 100%;
   border-spacing: 0; }
@@ -255,19 +258,14 @@ tppm > ..> ... .>. ... .> ...>..> .
 @asset css:footer
 >.. ... >.. ... ... >.. ... .. .>.
 */
-/**
-tppm > ..> ... .>. ... .> ...>..> .
-
-@asset css:forms
->.. ... >.. ... ... >.. ... .. .>.
-*/
 .element {
   overflow: hidden; }
 
 .element h3 {
   font-family: Georgia,serif;
   font-size: 18px;
-  font-weight: normal; }
+  font-weight: normal;
+  margin: 6px 3px; }
 
 .element p {
   font-family: Georgia,serif;
@@ -295,6 +293,18 @@ tppm > ..> ... .>. ... .> ...>..> .
 .element.element-text textarea {
   height: 60px; }
 
+.element-select select {
+  font-size: 18px;
+  padding: 6px;
+  width: 32%; }
+
+.element-datetime input {
+  width: 230px; }
+
+.element-editor textarea {
+  display: block;
+  height: 500px; }
+
 .element-file-ext input {
   width: 60%; }
 
@@ -314,13 +324,6 @@ tppm > ..> ... .>. ... .> ...>..> .
 .element-files-expand {
   margin: 12px 6px; }
 
-.element-editor textarea {
-  display: block;
-  height: 500px; }
-
-/**
- * Button styles
- */
 .element-bit-button {
   background-color: #FE3942;
   color: #efefef;
