@@ -3,12 +3,12 @@ Uncompiled hacks for pain in the ass browsers
 */
 
 /**
- * :element-file
+ * element-file
  * hidden layer snaps to improve the visual styling
  * of file input fields.
  */
 
-/*.element-file input[type=file], .element-files input[type=file] {
+.element-file input[type=file], .element-files input[type=file] {
 	position: relative;
 	text-align: right;
 	opacity:0;
@@ -17,7 +17,7 @@ Uncompiled hacks for pain in the ass browsers
 	opacity:0;
 	z-index:2;
 	width:67%;
-}*/
+}
 
 /** @todo mv this into Jquery for more accurate target hit area */
 .element-file input[type=file]:hover, .element-files input[type=file]:hover {

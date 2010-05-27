@@ -3,9 +3,9 @@ Main layout and grid system
 */
 
 /**
- * Header and navigation bars
- */
- 
+Header and navigation bars
+*/
+
 .header {
     width:100%;
     float:left;
@@ -27,14 +27,18 @@ Main layout and grid system
 }
 
 /**
- * Workspace column boxes
- */
+Workspace column boxes
+*/
+ 
+.workspace {
+    width:100%;
+    float:left;
+    margin-top:20px;
+}
 
 .workspace .col-a {
 	float:left;
 	width:70%;
-	padding-bottom:2px;
-	margin-bottom:20px;
 }
 
 .workspace .col-b {
@@ -52,11 +56,6 @@ Main layout and grid system
 .workspace .col-d {
 	float:left;	
 	width:60%;
-}
-
-.workspace .col-a .col-a,
-.workspace .col-a .col-c {
-    margin-bottom:0;
 }
 
 /**
