@@ -1,0 +1,35 @@
+  ,d
+  88
+MM88MMM  8b,dPPYba,   8b,dPPYba,   88,dPYba,,adPYba,
+  88     88P'    "8a  88P'    "8a  88P'   "88"    "8a
+  88     88       d8  88       d8  88      88      88
+  88,    88b,   ,a8"  88b,   ,a8"  88      88      88
+  "Y888  88`YbbdP"'   88`YbbdP"'   88      88      88
+         88           88
+         88           88
+
+== Design Goals
+
+Be simple
+
+- The web equivalent of Lego blocks for building forms
+- Embedded images and complex styling kept to a minimum
+  - Fast loading and rendering
+  - Easy to reskin visual style
+  
+Be comprehensive
+
+- Design patterns that cover all common CMS interactions
+- Componentization of all standard form elements
+
+Be elegant
+
+- Describe everything in high level language
+- Conceptual unity across different components
+- High quality of typography and visual execution
+
+Be open
+
+- Released under a permissive license
+- Embrace all possible ways of extending and implementing these ideas
+- Plugins for many different template engines, CMS platforms and app frameworks
