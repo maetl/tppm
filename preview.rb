@@ -23,9 +23,14 @@ get "/" do
   "The Personal Publishing Manifest"
 end
 
-get "/preview/dashboard" do
+get "/preview/construction" do
   # incomplete
-  erb :dashboard
+  erb :construction
+end
+
+get "/preview/blog" do
+  # incomplete
+  erb :blog
 end
 
 get "/preview/pictures" do
@@ -35,4 +40,8 @@ end
 
 get "/preview/elements" do
   erb :elements
+end
+
+get "/preview/dashboard" do
+  erb :dashboard
 end

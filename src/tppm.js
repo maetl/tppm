@@ -58,9 +58,8 @@ $(document).ready(function(){
      $(".element-editor textarea").ckeditor({ 
                              uiColor: '#eeeeee',
                              toolbar: [
-                                     ['Undo','Redo'],
                                      ['Bold', 'Italic', 'Strike', '-', 'Blockquote', 'NumberedList', 'BulletedList'],
-                                     ['Link' ,'Unlink', '-', 'SpecialChar'],
+                                     ['Link' ,'Unlink', '-', 'SpecialChar'], ['Picture'],
                                      ['PasteFromWord', 'RemoveFormat', '-', 'Source', '-', 'Maximize'],
                                      ['UIColor']
                                  ]
